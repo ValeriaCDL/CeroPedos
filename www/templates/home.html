@@ -16,9 +16,22 @@
         <div>
           <label class="item item-input">
             <i class="icon ion-search placeholder-icon"></i>
-            <input type="text" placeholder="Search">
+            <input type="search" placeholder="Busqueda..." ng-change="search()" ng-model="data.search">
           </label>
         </div>
+        
+          
+          <ion-list>
+              <ion-item ng-repeat="multa in data.multas" >
+                {{multa.infraccion}}
+              </ion-item>
+          </ion-list>
+          
+          
+            <input type="text" placeholder="Utiliza palabras clave">
+          </label>
+        </div>
+        <br>
 
          <div class="button-bar button-pill">
             <a class="button" href="#" class="item item-icon-left"><i class="icon ion-ios-videocam"></i></a>
@@ -28,7 +41,7 @@
       </ion-content>
     </ion-pane>
     <div class="bar bar-footer bar-stable">
-         <button class="button icon ion-social-facebook"></button>
+         <a href="https://www.facebook.com/0pedosApp/"><button class="button icon ion-social-facebook"></button></a>
          <button class="button icon ion-social-instagram"></button>
          <button class="button icon ion-social-twitter-outline"></button>
          <button class="button icon ion-android-locate"></button>
