@@ -1,0 +1,37 @@
+<ion-view title="Inicio">
+    <ion-pane>
+      <ion-nav-bar class="bar-stable">
+          <ion-nav-buttons side="right">
+        
+        <button class="button button-icon button-clear ion-navicon" ng-click="swipe('general')">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+      <ion-content on-swipe-right="swipe('search')">
+        <div class="item item-body">
+        <img class="full-image" src="img/homelogo.png">
+        </div>
+
+        <div>
+          <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Search">
+          </label>
+        </div>
+
+         <div class="button-bar button-pill">
+            <a class="button" href="#" class="item item-icon-left"><i class="icon ion-ios-videocam"></i></a>
+            <a class="button" href="#" class="item item-icon-left"><i class="icon ion-mic-a"></i></a>
+            <a class="button" href="#" class="item item-icon-left"><i class="icon ion-android-warning"></i></a>
+          </div>
+      </ion-content>
+    </ion-pane>
+    <div class="bar bar-footer bar-stable">
+         <button class="button icon ion-social-facebook"></button>
+         <button class="button icon ion-social-instagram"></button>
+         <button class="button icon ion-social-twitter-outline"></button>
+         <button class="button icon ion-android-locate"></button>
+    </div>
+   
+</ion-view>
