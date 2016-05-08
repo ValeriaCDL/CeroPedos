@@ -7,7 +7,7 @@ angular.module('ceropedos.routes', [])
   .state('home', {
     url: '/home',
     templateUrl: 'templates/home.html',
-    controller:'SlideCtrl'
+    controller:'HomeCtrl'
   })
 
   .state('search', {
@@ -18,7 +18,6 @@ angular.module('ceropedos.routes', [])
   .state('general', {
     url: '/general',
     templateUrl: 'templates/general.html',
-    controller:'SidemenuCtrl'
   })
   
   .state('profile', {

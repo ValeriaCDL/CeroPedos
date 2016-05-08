@@ -23,36 +23,38 @@
   </head>
   <body ng-app="starter">
 
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title"></h1>
-      </ion-header-bar>
-      <ion-content>
-<div class="list"><img src="img/optionicon.png"></i>
-  <label class="item item-input item-floating-label">
-    <span class="input-label">Nombre de usuario</span>
-    <input type="text" placeholder="Nombre de usuario">
-  </label>
-  <label class="item item-input item-floating-label">
-    <span class="input-label">Correo</span>
-    <input type="text" placeholder="Correo">
-  </label>
-  <label class="item item-input item-floating-label">
-    <span class="input-label">Contraseña</span>
-    <input type="text" placeholder="Contraseña">
-  </label>
-<label class="item item-input item-floating-label">
-  <input type="date">
-</label>
+   <ion-pane>
+          <ion-header-bar class="bar-stable">
 
-</div>
+            <h1 class="title">Perfil</h1>
+            <a href="#/general"><button class="button"><i class="icon ion-chevron-left"></i></button></a>
+          </ion-header-bar>
+
+      <ion-content>
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Nombre de usuario</span>
+               <input type="text" placeholder="Nombre de usuario">
+          </label>
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Fecha de nacimiento</span>
+               <input type="date" placeholder="Fecha de nacimiento">
+          </label>
+          <label class="item item-input item-floating-label">
+              <span class="input-label">Correo</span>
+                 <input type="text" placeholder="Correo">
+          </label>
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Contraseña</span>
+                  <input type="text" placeholder="Contraseña">
+          </label>
+        </div>
       </ion-content>
     </ion-pane>
   </body>
   <div class="bar bar-footer bar-stable">
-     <button class="button icon ion-social-facebook"></button>
-     <button class="button icon ion-social-instagram"></button>
-     <button class="button icon ion-social-twitter-outline"></button>
-     <button class="button icon ion-android-locate"></button>
-</div>
+         <a href="https://www.facebook.com/0pedosApp/"><button class="button icon ion-social-facebook"></button></a>
+         <a href="https://www.instagram.com/ceropedos/"><button class="button icon ion-social-instagram"></button></a>
+         <a href="https://twitter.com/CEROpedos"><button class="button icon ion-social-twitter-outline"></button></a>
+         <button class="button icon ion-android-locate"></button>
+    </div>
 </html>

@@ -2,3 +2,6 @@
   height: 300px;
   background-color: #eee;
 }
+
+.ion-md-customicon {
+        content: url(img/logoicon min.svg);

@@ -1,17 +1,22 @@
-angular.module('ceropedos.controllers', [])
+angular.module('ceropedos.controllers', ['ceropedos.services'])
         
-.controller('SlideCtrl', function($scope, $state) {
+.controller('HomeCtrl', function($scope, $state, BuscarMultas) {
     
     $scope.swipe = function(view){
         $state.go(view);
     }
-     
-})
+    
+    $scope.data = { "multas" : [], "search" : '' };
 
-.controller('SidemenuCtrl',function($scope,$ionicSideMenuDelegate){
-    $scope.toggleLeft = function() {
-    $ionicSideMenuDelegate.toggleLeft();
-  };
+    $scope.search = function() {
+
+    	BuscarMultas.buscar($scope.data.search).then(
+    		function(matches) {
+    			$scope.data.multas = matches;
+    		}
+    	)
+    }
+     
 });
 
 
