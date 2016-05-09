@@ -1,5 +1,5 @@
 
-angular.module('ceropedos', ['ionic','ceropedos.controllers','ceropedos.routes'])
+angular.module('ceropedos', ['ionic','ceropedos.controllers','ceropedos.routes', 'ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

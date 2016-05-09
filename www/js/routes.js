@@ -38,6 +38,12 @@ angular.module('ceropedos.routes', [])
   .state('underwrite', {
     url: '/underwrite',
     templateUrl: 'templates/underwrite.html',
+  })
+  
+  .state('sms', {
+    url: '/sms',
+    templateUrl: 'templates/sms.html',
+    controller:'SMSCtrl'
   });
 
 $urlRouterProvider.otherwise('/home')
